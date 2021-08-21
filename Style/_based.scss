@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Nunito";
+    font: $main-font;
+    margin: 0;
+    color: $main-color;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: $main-color;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1260px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
