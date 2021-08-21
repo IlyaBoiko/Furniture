@@ -1,0 +1,42 @@
+.footer {
+    padding: 74px 0 100px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 2px solid $main-color;
+        padding-top: 100px;
+    }
+
+    &__list {
+
+        &-title {
+            font: $h5-font;
+            color: $main-color;
+            display: block;
+            margin-bottom: 51px;
+
+            &-left {
+                margin-bottom: 34px;
+            }
+        }
+
+        &-link {
+            font: 400 18px/1.2 $montserrat-font;
+            color: rgba(40, 42, 48, 0.8);
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        &-about-us {
+            padding: 0 10px;
+        }
+
+        &-item:not(:last-child) {
+            margin-bottom: 27px;
+        }
+    }
+}
