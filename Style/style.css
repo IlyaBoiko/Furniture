@@ -154,6 +154,26 @@ a {
 
 .heading {
   padding: 20px 0 160px;
+  position: relative;
+}
+.heading:before {
+  content: "";
+  position: absolute;
+  left: 100px;
+  top: 25px;
+  background-image: url(../img/heading-decor-full.svg);
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 100%;
+}
+.heading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 35px;
+  height: 264px;
+  background-color: #F7515C;
 }
 .heading__wrap {
   display: flex;
