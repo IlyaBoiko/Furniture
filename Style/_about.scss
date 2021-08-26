@@ -1,0 +1,92 @@
+.about {
+    padding: 160px 0 103px;
+
+    &__wrap {
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__img-wrap {
+        width: 47%;
+        padding: 0 91px 87px 48px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/About-decor-main.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 76%;
+            height: 42%;
+            right: 42px;
+            bottom: 165px;
+            z-index: -1;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/About-decor.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 36%;
+            height: 25%;
+            left: 0;
+            bottom: 117px;
+            z-index: -1;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+
+        &-bg {
+            position: absolute;
+            background-image: url(../img/About-bg-decor.svg);
+            background-repeat: no-repeat;
+            width: 84%;
+            height: 53%;
+            bottom: -79px;
+            right: 0;
+            z-index: -2;
+        }
+    }
+
+    &__info {
+        width: 53%;
+        padding-left: 79px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    &__title {
+        color: $main-color;
+        font: $h2-font;
+
+        &-text {
+            font: $h1-font;
+            color: $white-color;
+            text-shadow: 0px 0px 4px $black-color;
+            margin-bottom: 55px;
+        }
+    }
+
+    &__text {
+        font: $main-font;
+        color: rgba($main-color, 0.5);
+        margin-bottom: 48px;
+        line-height: 2.4;
+    }
+
+    &__btn {
+        max-height: 78px;
+        max-width: 230px;
+        padding: 26px 52px;
+    }
+
+}

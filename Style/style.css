@@ -127,6 +127,7 @@ a {
   align-items: flex-start;
   border-top: 2px solid #282A30;
   padding-top: 100px;
+  margin: 0 -10px;
 }
 .footer__list-title {
   font: 600 26px/1.2 "Montserrat";
@@ -250,6 +251,87 @@ a {
   transform: translateY(-50%);
 }
 
+.about {
+  padding: 160px 0 103px;
+}
+.about__wrap {
+  display: flex;
+  align-items: stretch;
+}
+.about__img-wrap {
+  width: 47%;
+  padding: 0 91px 87px 48px;
+  position: relative;
+}
+.about__img-wrap:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/About-decor-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 76%;
+  height: 42%;
+  right: 42px;
+  bottom: 165px;
+  z-index: -1;
+}
+.about__img-wrap:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/About-decor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 36%;
+  height: 25%;
+  left: 0;
+  bottom: 117px;
+  z-index: -1;
+}
+.about__img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.about__img-bg {
+  position: absolute;
+  background-image: url(../img/About-bg-decor.svg);
+  background-repeat: no-repeat;
+  width: 84%;
+  height: 53%;
+  bottom: -79px;
+  right: 0;
+  z-index: -2;
+}
+.about__info {
+  width: 53%;
+  padding-left: 79px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about__title {
+  color: #282A30;
+  font: 700 60px/1.22 "Montserrat";
+}
+.about__title-text {
+  font: 700 100px/1.22 "Montserrat";
+  color: #fff;
+  text-shadow: 0px 0px 4px #000;
+  margin-bottom: 55px;
+}
+.about__text {
+  font: 400 22px/1.36 "Nunito";
+  color: rgba(40, 42, 48, 0.5);
+  margin-bottom: 48px;
+  line-height: 2.4;
+}
+.about__btn {
+  max-height: 78px;
+  max-width: 230px;
+  padding: 26px 52px;
+}
+
 .try {
   padding: 160px 0 74px;
 }
@@ -268,7 +350,7 @@ a {
 .try__wrap-name-title-shadow {
   font: 700 100px/1.22 "Montserrat";
   color: #fff;
-  text-shadow: 2px 2px 6px #000;
+  text-shadow: 0px 0px 4px #000;
 }
 .try__wrap-name-title {
   font: 700 100px/1.22 "Montserrat";
@@ -278,8 +360,6 @@ a {
 .try__wrap-name-btn {
   max-width: 240px;
   max-height: 90px;
-  width: auto;
-  height: auto;
 }
 .try__wrap-mainphoto {
   width: 50%;
